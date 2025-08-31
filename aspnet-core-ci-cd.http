@@ -1,0 +1,6 @@
+@aspnet_core_ci_cd_HostAddress = http://localhost:5030
+
+GET {{aspnet_core_ci_cd_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
