@@ -13,4 +13,4 @@ WORKDIR /app
 COPY --from=build-env /out .
 
 # Uygulamayı başlat
-ENTRYPOINT ["dotnet", "aspnet_core_ci_cd.dll"]
+ENTRYPOINT ["dotnet", "aspnet-core-ci-cd.dll"]
