@@ -36,6 +36,9 @@ app.MapGet("/weatherforecast", () =>
 .WithName("GetWeatherForecast")
 .WithOpenApi();
 
+// /deneme endpoint
+app.MapGet("/deneme", () => "Merhaba!");
+
 app.Urls.Add("http://0.0.0.0:80");
 
 app.Run();
