@@ -16,4 +16,4 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
-        script: cd /home/ubuntu/aspnet-core-ci-cd && git checkout prod && git pull && bash start.sh
+        script: cd /home/ubuntu/aspnet-core-ci-cd && git checkout main && git pull && bash start.sh
