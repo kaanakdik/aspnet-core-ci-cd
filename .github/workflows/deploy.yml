@@ -16,4 +16,4 @@ jobs:
       username: ${{ secrets.PROD_SSH_USERNAME }}
       key: ${{ secrets.PROD_SSH_KEY }}
       port: ${{ secrets.PROD_SSH_PORT }}
-      script: cd /home/debian/backend && git checkout prod && git pull && bash start.sh
+      script: cd /home/ubuntu/backend && git checkout prod && git pull && bash start.sh
