@@ -13,7 +13,7 @@ jobs:
     uses: appleboy/ssh-action@master
     with:
       host: ${{ secrets.SSH_HOST }}
-      username: ${{ secrets.PROD_SSH_USERNAME }}
-      key: ${{ secrets.PROD_SSH_KEY }}
-      port: ${{ secrets.PROD_SSH_PORT }}
-      script: cd /home/ubuntu/backend && git checkout prod && git pull && bash start.sh
+      username: ${{ secrets.SSH_USERNAME }}
+      key: ${{ secrets.SSH_KEY }}
+      port: ${{ secrets.SSH_PORT }}
+      script: cd /home/ubuntu/aspnet-core-ci-cd && git checkout prod && git pull && bash start.sh
