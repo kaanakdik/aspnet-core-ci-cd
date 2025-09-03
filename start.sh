@@ -1,2 +1,3 @@
 #!/bin/bash
-docker compose up --force-recreate --build -d
+docker compose down
+docker compose up -d --build --force-recreate
